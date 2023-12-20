@@ -34,6 +34,7 @@ public:
     {
         cout << "Vegetable - Name: " << name << ", Date: " << date << ", Type: " << type <<endl;
     }
+    ~Vegetable();
 };
 
 class DairyProduct : public FoodItem {
@@ -47,6 +48,7 @@ public:
     {
         cout << "Dairy Product - Name: " << name << ", Date: " << date << ", Fat: " << fat << "%" <<endl;
     }
+    ~DairyProduct();
 };
 void modifyFoodItem(FoodItem* item, const string& newName, const string& newdate)
 {
@@ -79,6 +81,7 @@ int main()
         for (const auto& item : foodItems) {
             item->display();
         }
+    
     
     cout << "_________" << endl;
 
